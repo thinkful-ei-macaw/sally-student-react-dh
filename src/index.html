@@ -4,48 +4,75 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Sally Student Resume</title>
-    <meta name="description" content="Education, employment history, and contact information."
+    <meta name="description" content="Education, employment history, and contact information.">
     <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
-  <header class="page-header">
-      <h1>Sally Student Resume</h1>
-  </header>
-  <main>
-     <section>
-        <h2>Education</h2>
-        <ul>
-          <li><b>North Carolina State University</b></li>
-          <p>August 2014-May 2018</p>
-          <p>BS Polymer and Color Chemistry</p>
-        </ul>
-        </h2>
-     </section>
-     <section>
-       <h2>Employment History</h2>
-         <ul>
-          <li><b>Chiesi USA</b>
-            <p>Quality Assurance Representative</p>
-            <p>May 2017-Present</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
-          </li>      
-            <li><b>Applebee's</b>
-            <p>Waitress</p>
-            <p>October 2013-April 2017</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</p>
-          </li>  
-      </section> 
-      <section>
-        <h2>Contact Info</h2>
-        <p align="center"><b>Sally Student</b></p>
-        <p align="center">
-          <img src="sally%20student.jpg" alt="Sally Student Individual Picture" width="100" height="150"
-        </p>
-        <address>
+  <body>
+    <div id="application-root"></div>
+    <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type="text/babel">
+console.log('hey');
+function App(){
+    return (
+  <div>
+    <header>
+        <h1>Sally Student Resume</h1>
+    </header>
+    <main>
+       <section>
+          <h2>Education</h2>
           <ul>
-            <li><a href="mailto:sstudent@gmail.com">Sally Student Email</a>
+            <li>North Carolina State University</li>
+            <li>August 2014-May 2018</li>
+            <li>BS Polymer and Color Chemistry</li>
+          </ul>
+       </section>
+       <section>
+         <h2>Employment History</h2>
+           <ul>
+            <li>Chiesi USA</li>
+            <li>Quality Assurance Representative</li>
+            <li>May 2017-Present</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</li>     
+            <li>Applebee's</li>
+            <li>Waitress</li>
+           <li>October 2013-April 2017</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae veritatis sed laborum, accusantium ut dolore asperiores ea enim, hic fuga corporis? Id cupiditate, voluptatibus veniam doloribus consectetur quia! Quae, eveniet?</li>
+          </ul>
+         </section> 
+        <section>
+         <h2>Contact Info</h2>
+        <h3>Sally Student</h3>
+          <img src="sally-student.jpg"></img>
+        <div>
+          <ul>
+            <li><a href="mailto:sstudent@gmail.com">Sally Student Email</a></li>
             <li>9999999999</li>
-        </address>
-    </section>
-  </main>
+          </ul>
+       </div>
+     </section>
+   </main>
+  </div>
+    );
+  };
+
+  ReactDOM.render(
+    <App />,
+    document.querySelector('#application-root')
+  );
+
+</script>
+
+</body>
 </html>
+
+
